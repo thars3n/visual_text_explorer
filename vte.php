@@ -253,10 +253,17 @@
 					<br><br>
 					If you would like a PDF of the output from the VTE, just hit the PDF button. Another loading bar will pop up and show you how far along the VTE is in the rendering process. Don't worry if the loading bar stops around 95%. This just means the VTE is in the final steps of preparing you PDF.
 					<br><br>
-					To try the VTE, download the two files below, load them into the VTE and hit run.
+					To try the VTE, download the files from one of the demos below and upload them to their correspoding areas.
 					<br><br>
-					<a href='tcupload/Demo_Source.txt' download>SOURCE</a><br>
-					<a href='tcupload/Demo_List.txt' download>LIST</a><br><br>
+					<strong>Sherlock Holmes Demo</strong><br>
+					<a href='tcupload/VTE SHolmes Demo Source.txt' download>ENGLISH SOURCE</a><br>
+					<a href='tcupload/VTE SHolmes Demo List.txt' download>ENGLISH LIST</a><br><br>
+					<strong>Chinese Demo</strong><br>
+					Note: To properly render this demo, make sure to select the "Split on Characters" option in the Basic Options Menu.<br>
+					<a href='tcupload/VTE Chinese Demo Source.txt' download>CHINESE SOURCE</a><br>
+					<a href='tcupload/VTE Chinese Demo List.txt' download>CHINESE LIST</a><br><br>
+					<br><br>
+					For assistance or further information, please contact <a href="mailto:webmaster@edoc.uchicago.edu?Subject=VTE%20Inquiry" target="_top">webmaster@edoc.uchicago.edu</a>
 				</div>
 				<div id="basic" class="info_content">
 					<u><strong>Display Options</strong></u>
