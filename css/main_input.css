@@ -1,0 +1,727 @@
+html {
+	min-width: 1142px;
+	 }
+
+/* Helpers and base rules */
+
+/*general layout*/
+body{
+	font-size: 100%;
+	text-align: center;
+	color: black;
+	background-color: #ffffff;
+	/*background-image:url(../images/seal.gif);*/
+	background-position:center top;
+	background-repeat: no-repeat;
+	margin: 0;
+	/*padding: 250px 25px 0 25px;*/
+}
+div, p, ul, li, h1, h2, h3, h4, dl, dd, img {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+p, div, li, div, h1, h2, h3, h4 {
+	font-family: PMingLiu, MingLiu, Times, arial, sans-serif;
+	text-align: left;
+	white-space: nowrap;
+}
+
+a {
+	color: #6666FF;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color:#6666FF;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 21px;
+	/*background-image: url(../images/page_header_bg.gif);*/
+	background-repeat: no-repeat;
+	background-position: top right;
+	height:40px;
+	margin: 0 1px 0 0;
+	line-height:40px;
+	border-bottom: #000000 solid 1px;
+}
+h2 {
+	color: #938756;
+	font-size: 1.4em;
+	padding-top:1em;
+}
+h3{
+padding: 0 25px;
+white-space: nowrap;
+font-size:1.1em;
+margin:0 0 0 0;
+text-align:left;
+font-family:Times;
+}
+
+h4{
+font-size:1em;
+margin:1.5em 0 0 0;
+color: #938756;
+}
+
+#header p{
+text-align:left;
+font-family:Times;
+}
+
+
+#header a{
+  top: 0;
+  left: 0;
+  height: 250px;
+  width: 100%;
+  background-color: #9999FF;
+  /*display: block; */
+}
+@media screen{
+  body>div#header{
+   position:fixed;
+  }
+}
+* html body{
+  overflow:hidden;
+}
+ * html div#content{
+  height:100%;
+  overflow:auto;
+}
+
+
+body#index #header a{
+height: 0px;
+}
+#header a .hide{display:none;}
+img.right{
+margin:5px 0 5px 5px;
+border: solid black 1px;
+float:right;
+}
+img.left{
+margin:5px 5px 5px 0;
+border: solid black 1px;
+float:left;
+}
+.alert{color: #6666FF; font-style:italic;}
+
+#wrapper{
+	/*width: 1166px;*/
+	position: static;
+	margin: *auto;
+	height:1%;
+	/*background-image: url(../images/content_bg_nolinert.gif);*/
+}
+
+body#index #wrapper{
+/*
+	background-image:url(../images/index_redstripe.jpg);
+	background-position:0 387px;
+	background-repeat:no-repeat;
+*/
+}
+
+#wrapper:after { content: "."; clear: both; visibility: hidden; height: 0; display: block;}
+/*good browsers: enclose leftcol and content.  IE fix is located on ssi/styles.shtml*/
+
+ * html>body #wrapper {display:inline-table}
+/*Mac IE 5: enclose leftcol and content*/
+
+#content{
+	color: black;
+	font-size: .8em;
+	margin: 0 38px 0 100px;
+	background-color: transparent;
+	clear:right;
+	padding: 0 0 2em 0;
+	position:static;
+}
+
+#content p{
+	padding-right:20px;
+	padding-top: 1em;
+}
+#content ul{
+margin-left:25px;
+padding-top:.5em;
+padding-right:20px;
+}
+#content a{text-decoration:underline;}
+#content a:visited{color: #000000;}
+
+#header{
+  top: 0;
+  left: 0;
+	width: 100%;
+	height: 250px;
+	background-color: #9999FF;
+	/*background-image: url(../images/edoc_headericon.jpg);*/
+	background-repeat: no-repeat;
+	background-position: left;
+	/*position:fixed;*/
+	position: absolute;
+}
+body#index #header{
+	height: 61px;
+	width: 100%;
+	background-color: black;
+	/*background-image: url(../images/index_header.gif);*/
+	}
+
+#footer {
+	background-color: #9999FF;
+	color: white;
+	width: 100%;
+	height: 111px;
+	position: relative;
+/*	background-image: url(../images/footer.gif);*/
+	background-repeat: no-repeat;
+	background-position: top left;
+	clear: both;
+	margin-top: -5px;
+}
+
+body#index #footer {
+	height: 158px;
+	width: 100%;
+	background-color: #6666FF;
+/*	background-image: url(../images/index_footer.gif);*/
+
+}
+body#index> #footer{
+margin-top: 0;
+}
+#footer p{
+padding-right: 100px;
+font-size: .7em;
+text-align: right;
+padding-top: 30px;
+}
+#footer a, #footer a:visited{color: #000000;}
+
+#navigation{
+	width: 100px;
+	float:left;
+	text-align: right;
+	z-index: 100;
+	margin:0 0 200px 0;
+}
+
+body#index #navigation{
+	width: 100px;
+	margin-bottom:0;
+}
+#navigation ul{
+	margin-top:12px;
+	text-align: right;
+}
+
+#navigation ul li{
+	list-style:none;
+	margin-right:0px;
+	padding: 8px 35px 10px 0;
+	text-align: right;
+	/*background-image: url(../images/bullet_wbg.gif);*/
+	background-repeat: no-repeat;
+	background-position: 180px 12px;
+	line-height:13px;
+}
+
+body#index #navigation ul li {
+	background-position: 230px 12px;
+	padding: 6px 35px 6px 0;
+}
+
+#navigation ul li a{
+font-weight: bold;
+font-size: 13px;
+color:#413F3F;
+text-decoration:none;
+}
+
+body#home li.home,
+body#phonetics_db li.phonetics_db,
+body#phonetics_cols li.phonetics_cols,
+body#phonetics_filein li.phonetics_filein,
+body#search li.search,
+body#sound li.sound,
+body#lists li.lists,
+body#links li.links,
+body#about li.about {
+		border:#6666FF 1px solid;
+		border-right-color: white;
+		background-color:white;
+		color:black;
+		margin-right:-1px;
+		background-image: none;
+}
+
+#navigation li a:hover,
+#indexNavigation ul li a:hover,
+body#home li.home a,
+body#phonetics_db li.phonetics_db a,
+body#phonetics_cols li.phonetics_cols a,
+body#phonetics_filein li.phonetics_filein a,
+body#search li.search a,
+body#sound li.sound a,
+body#lists li.lists a,
+body#links li.links a,
+body#about li.about a {
+	color:#6666FF;
+}
+
+/*subnavigation*/
+#subnav ul
+ {
+	list-style: none;
+	display: none;
+	margin:0;
+	padding:5px 0;
+	border-bottom: #938756 solid 1px;
+}
+body#home div.home ul,
+body#phonetics_db div.phonetics_db ul,
+body#phonetics_cols div.phonetics_cols ul,
+body#phonetics_filein div.phonetics_filein ul,
+body#search div.search ul,
+body#sound div.sound ul,
+body#lists div.lists ul,
+body#links div.links ul,
+body#about div.about ul {
+	display: block;
+}
+
+#subnav ul li{
+	list-style:none;
+	display:inline;
+	}
+
+#subnav a{border-right: 1px solid #938756;}
+#subnav a.no-border{border:none;}
+#subnav a, #subnav a:visited {
+	color:#413F3F;
+	background-color:white;
+	margin: 0 5px 0 0;
+	padding:0 9px 0 0;
+	height:1%;
+	font-size: .9em;
+	font-weight:bolder;
+	text-decoration:none;
+}
+#subnav a:hover{
+	color:#6666FF;
+	background-color:white;
+}
+
+#navigation ul li ul {
+	display: none;
+}
+
+/* ALEX MUELLER ADDITIONS 8/1/16 */
+
+#newheader {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 250px;
+	background: #283d3b;
+	color: #e55812;
+	font-family: sans-serif;
+  box-shadow: 5px 5px 5px #d3d3d3;
+}
+
+#headerleft {
+	width: 300px;
+	/*float: left;*/
+}
+
+#vte_logo {
+	width: 250px;
+	/*color: white;*/
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 44px;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+
+#vte_beta {
+	width: 100px;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+#headermiddle {
+	margin-top: 20px;
+}
+
+.headermiddle {
+	width: 300px;
+	font-family: sans-serif;
+}
+
+.headermiddle span {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.headermiddle h1 {
+	font-weight: bold;
+	font-size: 30px;
+	/*line-height: 0;*/
+	border-bottom: none;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.headermiddle h3 {
+	color: white;
+	font-family: sans-serif;
+	font-weight: normal;
+	padding-bottom: 10px;
+	/*padding-left: 0;*/
+}
+
+.headermiddle input {
+	padding-left:5px;
+}
+
+#headerright {
+	width: 550px;
+}
+
+#headerright button {
+	background: none;
+  /*border: white 1px solid;*/
+	border: none;
+  color: #e55812;
+  width: 100%;
+	outline: none;
+	font-weight: bold;
+	height: 50px;
+	transition: 0.4s;
+	text-align: left;
+	font-size: 20px;
+	cursor: pointer;
+	display: block;
+	padding-left: 10px;
+}
+
+#headerright button.active, #headerright button:hover {
+	background: #e55812;
+	color: black;
+}
+
+#headerright button:after {
+	content: '\25BC';
+	font-size: 13px;
+	color: #e55812;
+	float: right;
+	margin-left: 5px;
+}
+
+#headerright button.accordion.active:after {
+    content: "\25B2";
+		color: black;
+}
+
+div.panel {
+	background: #e55812;
+	color: black;
+	/*display: none;*/
+	max-height: 0px;
+	overflow: hidden;
+	transition: 0.4s ease-in-out;
+	opacity: 0;
+}
+
+div.panel.show {
+	/*display: block !important;*/
+	opacity: 1;
+	max-height: 150px;
+	/*height: 150px;*/
+}
+
+.panel table {
+	font-family: sans-serif;
+	margin: 15px;
+}
+
+body {
+	padding: 0px;
+}
+
+#newRunButton h1 {
+	text-align: center;
+	border-bottom: none;
+}
+
+#newRunButton input {
+	/*background: #f7cb15;*/
+	background: #283d3b;
+	width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 12%;
+  border: #283d3b 2px solid;
+  /*color: #283d3b;*/
+	color: #e55812;
+  cursor: pointer;
+	transition: 0.2s;
+}
+
+#newRunButton input:hover {
+	background: #e55812;
+	color: black;
+}
+
+#key {
+  margin-top: 50px;
+}
+
+#keyLeft {
+	width: 50%;
+	float: left;
+	font-family: sans-serif;
+	margin-bottom: 30px;
+}
+
+#keyLeftButton {
+	min-width: 250px;
+	width: 250px;
+  height: 40px;
+  background: white;
+  border: 1px solid black;
+  text-align: left;
+  cursor: pointer;
+	transition: width .3s;
+	font-weight: bold;
+}
+
+#keyLeftButton:hover,#keyLeftButton.active {
+	background-color: #e55812;
+}
+
+#keyLeftButton:after {
+	content: '\02795';
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+    padding-bottom: 0;
+    padding-right: 10px;
+    position: relative;
+    top: -2px;
+    font-weight: normal
+}
+
+#keyLeftButton.active:after {
+	content: '\2796';
+	font-size: 13px;
+	color: black;
+	float: right;
+	margin-left: 5px;
+}
+
+#headerright button.accordion.active:after {
+    content: "\25B2";
+		color: black;
+}
+
+#keyLeftDropdown {
+	min-width: 250px;
+	margin-bottom: 20px;
+	/*display: none;*/
+	background: white;
+	position: absolute;
+	border: 1px solid #d3d3d3;
+
+	padding-top: 20px;
+	transition: .5s ease-in-out;
+
+	max-height: 0px;
+	/*max-width: 0px;*/
+	overflow: hidden;
+	opacity: 0;
+}
+
+#keyLeftDropdown.show {
+	opacity: 1;
+	max-height: 150px;
+	/*max-width: 150px;*/
+	/*border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;*/
+}
+
+#keyRight {
+	/*width: 50%;*/
+	width: 45%;
+  float: right;
+	font-family: sans-serif;
+	margin-bottom: 50px;
+	/*display: none;*/
+}
+
+/*.bigScreen {
+	display: none;
+}
+
+.smallScreen {
+	display: block;
+}*/
+
+#loadingArea {
+	width: 80%;
+	height: 30px;
+	margin-bottom: 10px;
+	border: black solid 1px;
+}
+
+#loadingBar {
+	height: inherit;
+	width: 0%;
+	background: #e55812;
+	/*border-right: black 1px solid;*/
+}
+
+#loadingSpan {
+	float: right;
+	padding-top: 6px;
+	padding-right: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+#pdfLoadingNotice {
+	display: none;
+}
+
+#pdfLoadingArea {
+	width: 80%;
+  height: 30px;
+  border: black 1px solid;
+  margin-bottom: 10px;
+  margin-top: 10px;
+	display: none;
+}
+
+#pdfLoadingBar {
+	background: #e55812;
+	height: inherit;
+	width: 0%;
+}
+
+#pdfLoadingSpan {
+    float: right;
+    padding-top: 6px;
+    padding-right: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.disabled {
+	opacity: 0.5;
+}
+
+@font-face {
+  font-family: 'cyberbit';
+	src: url('ARIALUNI.TTF') format('truetype');
+}
+
+#info_panel {
+	background: red none repeat scroll 0% 0%;
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	display: none;
+	/*border-top-left-radius: 10px;
+	border-top-right-radius: 10px;*/
+	/*border-radius: 10px;*/
+	font-family: sans-serif;
+	background: white;
+	border: black 1px solid;
+}
+
+#info_panel button {
+	width: 25%;
+	float: left;
+	background: rgb(229, 88, 18) none repeat scroll 0% 0%;
+	height: inherit;
+	border: none;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	font-family: sans-serif;
+}
+
+#info_panel button:last-of-type {
+	border-right: none;
+}
+
+#info_panel button:hover{
+	background: white !important;
+}
+
+.selected {
+	background: white !important;
+	border-bottom: none !important;
+}
+
+#info_panel h1 {
+	text-align: center;
+	background: rgb(40, 61, 59) none repeat scroll 0% 0%;
+	/*border-top-left-radius: 10px;
+	border-top-right-radius: 10px;*/
+	width: 100%;
+	color: #e55812;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.info_content {
+	padding: 10px;
+	font-size: 15px;
+	font-family: sans-serif;
+	white-space: normal;
+	overflow-y: auto;
+}
+
+#info_panel_backdrop {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+/*sftp://webspace.uchicago.edu/home/ajmueller/edoc/alexmueller/vteh/css/bitstream-cybercjk.ttf*/
+@media screen and (min-width: 1600px){
+	/*.bigScreen {
+		display: block;;
+	}
+
+	.smallScreen {
+		display: none;
+	}*/
+
+	/*#headermiddle h1 {
+		margin-top: 50px;
+	}*/
+}
