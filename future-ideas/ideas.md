@@ -1,2 +1,2 @@
-#Current Ideas
-* Additional color modulation
+##Current Ideas
+###Additional color modulation
